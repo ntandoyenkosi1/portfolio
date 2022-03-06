@@ -1,1 +1,1 @@
-- 👋 Hi, I’m @ntandoyenkosi
+- 👋 Hi, I’m Ntandoyenkosi
