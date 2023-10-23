@@ -1,8 +1,8 @@
 import * as React from "react";
 const Css = (props) => (
   <svg
-    width="256ppx"
-    height="256pxpx"
+    width="256px"
+    height="256px"
     viewBox="0 0 32 32"
     xmlns="http://www.w3.org/2000/svg"
     {...props}

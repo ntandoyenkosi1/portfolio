@@ -10,6 +10,9 @@ import ReactComponent from "./img/React"
 import TypeScript from "./img/TypeScript"
 import Star from "./components/Star"
 import StarFilled from "./components/StarFilled"
+import GitHub from "./components/GitHub"
+import LinkedIn from "./components/LinkedIn"
+import Email from "./components/Email"
 function App() {
   return (
     <div>
@@ -32,22 +35,18 @@ function App() {
           <h1>I'm Ntandoyenkosi Mendu</h1>
           {/* {I am a software developer} */}
           <h2>I create for the digital world.</h2>
-          <div>
-            <button>My Projects</button>
-            <button>Contact Me</button>
-          </div>
         </div>
         <div>
           I am a Software Developer.
-          <br/>
+          <br />
           Studied Information Systems at University of Cape Town.
-          
+          <div>
+            <a title="Let's connect on LinkedIn" href="https://www.linkedin.com/in/ntandoyenkosi-mendu/" target="_blank"><LinkedIn /></a>
+            <a title="Contact me via Email" href="mailto:ntandoyenkosi.mendu@gmail.com" target="_blank"><Email /></a>
+            <a title="Check out my work on GitHub" href="https://github.com/ntandoyenkosi1" target="_blank"><GitHub /></a>
+          </div>
         </div>
 
-      </div>
-      <div className="about">
-        <h1>About Me</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
       <div className="work">
         <h1>My Work</h1>
