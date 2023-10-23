@@ -1,4 +1,13 @@
 import Ntando from "./img/ntandoyenkosi.jpg"
+import CSharp from "./img/CSharp"
+import Css from "./img/Css"
+import Html from "./img/Html"
+import Javascript from "./img/Js"
+import NodeJs from "./img/Node"
+import Python from "./img/Python"
+import ReactNative from "./img/ReactNative"
+import ReactComponent from "./img/React"
+import TypeScript from "./img/TypeScript"
 function App() {
   return (
     <div>
@@ -34,7 +43,42 @@ function App() {
       </div>
       <div className="tech-stack">
         <div>
-          
+          <div className="tech">
+            <CSharp/>
+            <p>C#</p>
+          </div>
+          <div className="tech">
+            <Javascript/>
+            <p>JavaScript</p>
+          </div>
+          <div className="tech">
+            <Css/>
+            <p>CSS</p>
+          </div>
+          <div className="tech">
+            <Html/>
+            <p>HTML</p>
+          </div>
+          <div className="tech">
+            <ReactComponent/>
+            <p>React</p>
+          </div>
+          <div className="tech">
+            <TypeScript/>
+            <p>TypeScript</p>
+          </div>
+          <div className="tech">
+            <Python/>
+            <p>Python</p>
+          </div>
+          <div className="tech">
+            <ReactNative/>
+            <p>React Native</p>
+          </div>
+          <div className="tech">
+            <NodeJs/>
+            <p>NodeJS</p>
+          </div>
         </div>
       </div>
     </div>
