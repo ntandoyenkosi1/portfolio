@@ -7,6 +7,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -15,22 +19,49 @@ code {
 header {
   display: flex;
   justify-content: space-around;
-  padding: 20px;
+  align-items: center;
+  height: 10vh;
 }
 
 header>div>a {
   padding: 20px;
+  text-decoration: none;
+  color: black;
 }
 
-.tech-stack >div {
+.tech-stack>div {
   display: flex;
   flex-wrap: wrap;
 }
 
-.tech svg {
-  width: 256px;
-  height: 256px;
+.tech>svg {
+  width: 200px;
+  height: 200px;
 }
-.tech{
+
+.tech {
   padding: 30px;
+}
+
+/* #root>div>div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+.work>div {
+  display: flex;
+  align-items: stretch;
+}
+.work a{
+  text-decoration: none;
+  color:black;
+  padding-left: 40px;
+}
+
+.landing-page{
+  height: 90vh;
+  display: flex !important;
+    align-items: center !important;
+    justify-content: space-evenly !important;
 }
