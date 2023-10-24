@@ -13,6 +13,8 @@ import StarFilled from "./components/StarFilled"
 import GitHub from "./components/GitHub"
 import LinkedIn from "./components/LinkedIn"
 import Email from "./components/Email"
+import HomePage from "./img/homepage.jpg"
+import Arrow from "./components/Arrow"
 function App() {
   return (
     <div>
@@ -51,21 +53,43 @@ function App() {
       <div className="work">
         <h1>My Work</h1>
         <div>
-          <a href="#">
-            <img src={Ntando} width={150} />
-            <p>Project 1</p>
-            <label>HTML, CSS, JS</label>
-          </a>
-          <a href="#">
-            <img src={Ntando} width={150} />
-            <p>Project 2</p>
-            <label>HTML, CSS, JS</label>
-          </a>
-          <a href="#">
-            <img src={Ntando} width={150} />
-            <p>Project 3</p>
-            <label>HTML, CSS, JS</label>
-          </a>
+          <div className="project">
+            <div>
+              <h3>Big Small Blog</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br/>eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <br/>Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+              <a title="Open in new tab" href="#" target="_blank"><Arrow/></a>
+              <a title="View source code" href="#"target="_blank"><GitHub/></a>
+            </div>
+            <div>
+              <img src={HomePage} height={300}/>
+            </div>
+          </div>
+          <div className="project">
+            <div>
+              <h3>Big Small Blog</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br/>eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <br/>Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+              <a title="Open in new tab" href="#" target="_blank"><Arrow/></a>
+              <a title="View source code" href="#"target="_blank"><GitHub/></a>
+            </div>
+            <div>
+              <img src={HomePage} height={300}/>
+            </div>
+          </div> 
+          <div className="project">
+            <div>
+              <h3>Big Small Blog</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br/>eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <br/>Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+              <a title="Open in new tab" href="#" target="_blank"><Arrow/></a>
+              <a title="View source code" href="#"target="_blank"><GitHub/></a>
+            </div>
+            <div>
+              <img src={HomePage} height={300}/>
+            </div>
+          </div> 
+          
         </div>
       </div>
       <h1>Skills</h1>
