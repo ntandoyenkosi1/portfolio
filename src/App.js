@@ -58,6 +58,7 @@ function App() {
               <h3>Big Small Blog</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br/>eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 <br/>Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+                <label>Node.JS, Handlebars, Express, MySQL</label><br/>
               <a title="Open in new tab" href="#" target="_blank"><Arrow/></a>
               <a title="View source code" href="#"target="_blank"><GitHub/></a>
             </div>
@@ -70,33 +71,38 @@ function App() {
               <h3>Big Small Blog</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br/>eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 <br/>Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+                <label>Node.JS, Handlebars, Express, MySQL</label><br/>
               <a title="Open in new tab" href="#" target="_blank"><Arrow/></a>
               <a title="View source code" href="#"target="_blank"><GitHub/></a>
             </div>
             <div>
               <img src={HomePage} height={300}/>
             </div>
-          </div> 
-          <div className="project">
-            <div>
-              <h3>Big Small Blog</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br/>eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                <br/>Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
-              <a title="Open in new tab" href="#" target="_blank"><Arrow/></a>
-              <a title="View source code" href="#"target="_blank"><GitHub/></a>
-            </div>
-            <div>
-              <img src={HomePage} height={300}/>
-            </div>
-          </div> 
-          
+          </div>
         </div>
       </div>
-      <h1>Skills</h1>
+      <div className="self">
+        <div className="education">
+          <h1>Education</h1>
+          <div>
+            <h4>University of Cape Town</h4>
+            <p>Bachelor of Commerce (Hons) specializing in Information Systems</p>
+            <p>Feb 2021-Nov 2021</p>
+          </div>
+          <div>
+            <h4>University of Cape Town</h4>
+            <p>Bachelor of Commerce specializing in Information Systems</p>
+            <p>Mar 2017-Nov 2020</p>
+          </div>
+        </div>
+        
+      </div>
+      <div className="skills">
+        <h1>Skills</h1>
       <div className="tech-stack">
         <div>
           <div className="tech">
-            <CSharp />
+           
             <p>C#</p>
             <span>
               <StarFilled />
@@ -107,7 +113,7 @@ function App() {
             </span>
           </div>
           <div className="tech">
-            <Javascript />
+            
             <p>JavaScript</p>
             <span>
               <StarFilled />
@@ -118,7 +124,7 @@ function App() {
             </span>
           </div>
           <div className="tech">
-            <Css />
+            
             <p>CSS</p>
             <span>
               <StarFilled />
@@ -129,7 +135,7 @@ function App() {
             </span>
           </div>
           <div className="tech">
-            <Html />
+           
             <p>HTML</p>
             <span>
               <StarFilled />
@@ -140,7 +146,7 @@ function App() {
             </span>
           </div>
           <div className="tech">
-            <ReactComponent />
+            
             <p>React</p>
             <span>
               <StarFilled />
@@ -151,7 +157,7 @@ function App() {
             </span>
           </div>
           <div className="tech">
-            <TypeScript />
+            
             <p>TypeScript</p>
             <span>
               <StarFilled />
@@ -162,7 +168,7 @@ function App() {
             </span>
           </div>
           <div className="tech">
-            <Python />
+           
             <p>Python</p>
             <span>
               <StarFilled />
@@ -173,7 +179,7 @@ function App() {
             </span>
           </div>
           <div className="tech">
-            <ReactNative />
+            
             <p>React Native</p>
             <span>
               <StarFilled />
@@ -184,7 +190,7 @@ function App() {
             </span>
           </div>
           <div className="tech">
-            <NodeJs />
+           
             <p>NodeJS</p>
             <span>
               <StarFilled />
@@ -196,6 +202,8 @@ function App() {
           </div>
         </div>
       </div>
+        </div>
+      
     </div>
 
   );
