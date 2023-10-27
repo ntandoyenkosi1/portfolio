@@ -15,6 +15,7 @@ import LinkedIn from "./components/LinkedIn"
 import Email from "./components/Email"
 import HomePage from "./img/homepage.jpg"
 import Arrow from "./components/Arrow"
+import Uct from "./img/uct.png"
 function App() {
   return (
     <div>
@@ -56,27 +57,27 @@ function App() {
           <div className="project">
             <div>
               <h3>Big Small Blog</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br/>eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                <br/>Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
-                <label>Node.JS, Handlebars, Express, MySQL</label><br/>
-              <a title="Open in new tab" href="#" target="_blank"><Arrow/></a>
-              <a title="View source code" href="#"target="_blank"><GitHub/></a>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br />eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <br />Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+              <label>Node.JS, Handlebars, Express, MySQL</label><br />
+              <a title="Open in new tab" href="#" target="_blank"><Arrow /></a>
+              <a title="View source code" href="#" target="_blank"><GitHub /></a>
             </div>
             <div>
-              <img src={HomePage} height={300}/>
+              <img src={HomePage} height={300} />
             </div>
           </div>
           <div className="project">
             <div>
               <h3>Big Small Blog</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br/>eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                <br/>Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
-                <label>Node.JS, Handlebars, Express, MySQL</label><br/>
-              <a title="Open in new tab" href="#" target="_blank"><Arrow/></a>
-              <a title="View source code" href="#"target="_blank"><GitHub/></a>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br />eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <br />Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+              <label>Node.JS, Handlebars, Express, MySQL</label><br />
+              <a title="Open in new tab" href="#" target="_blank"><Arrow /></a>
+              <a title="View source code" href="#" target="_blank"><GitHub /></a>
             </div>
             <div>
-              <img src={HomePage} height={300}/>
+              <img src={HomePage} height={300} />
             </div>
           </div>
         </div>
@@ -85,125 +86,76 @@ function App() {
         <div className="education">
           <h1>Education</h1>
           <div>
-            <h4>University of Cape Town</h4>
-            <p>Bachelor of Commerce (Hons) specializing in Information Systems</p>
-            <p>Feb 2021-Nov 2021</p>
+            <div><img src={Uct} width={100} /></div>
+
+            <div>
+              <h3>University of Cape Town</h3>
+              <h4>Bachelor of Commerce (Honours) specializing in Information Systems</h4>
+              <label>Feb 2021-Nov 2021</label>
+            </div>
           </div>
           <div>
-            <h4>University of Cape Town</h4>
-            <p>Bachelor of Commerce specializing in Information Systems</p>
-            <p>Mar 2017-Nov 2020</p>
+            <div><img src={Uct} width={100} /></div>
+            <div>
+              <h3>University of Cape Town</h3>
+              <h4>Bachelor of Commerce specializing in Information Systems</h4>
+              <label>Mar 2017-Nov 2020</label></div>
           </div>
+
         </div>
-        
+
       </div>
       <div className="skills">
         <h1>Skills</h1>
-      <div className="tech-stack">
-        <div>
-          <div className="tech">
-           
-            <p>C#</p>
-            <span>
-              <StarFilled />
-              <StarFilled />
-              <StarFilled />
-              <StarFilled />
-              <Star />
-            </span>
-          </div>
-          <div className="tech">
-            
-            <p>JavaScript</p>
-            <span>
-              <StarFilled />
-              <StarFilled />
-              <StarFilled />
-              <StarFilled />
-              <StarFilled />
-            </span>
-          </div>
-          <div className="tech">
-            
-            <p>CSS</p>
-            <span>
-              <StarFilled />
-              <StarFilled />
-              <StarFilled />
-              <StarFilled />
-              <StarFilled />
-            </span>
-          </div>
-          <div className="tech">
-           
-            <p>HTML</p>
-            <span>
-              <StarFilled />
-              <StarFilled />
-              <StarFilled />
-              <StarFilled />
-              <StarFilled />
-            </span>
-          </div>
-          <div className="tech">
-            
-            <p>React</p>
-            <span>
-              <StarFilled />
-              <StarFilled />
-              <StarFilled />
-              <StarFilled />
-              <StarFilled />
-            </span>
-          </div>
-          <div className="tech">
-            
-            <p>TypeScript</p>
-            <span>
-              <StarFilled />
-              <StarFilled />
-              <StarFilled />
-              <StarFilled />
-              <Star />
-            </span>
-          </div>
-          <div className="tech">
-           
-            <p>Python</p>
-            <span>
-              <StarFilled />
-              <StarFilled />
-              <StarFilled />
-              <Star />
-              <Star />
-            </span>
-          </div>
-          <div className="tech">
-            
-            <p>React Native</p>
-            <span>
-              <StarFilled />
-              <StarFilled />
-              <StarFilled />
-              <Star />
-              <Star />
-            </span>
-          </div>
-          <div className="tech">
-           
-            <p>NodeJS</p>
-            <span>
-              <StarFilled />
-              <StarFilled />
-              <StarFilled />
-              <StarFilled />
-              <StarFilled />
-            </span>
+        <div className="tech-stack">
+          <div>
+            <div className="tech">
+
+              <p>C#</p>
+              <div className="progress"><span className="yellow sub-highest"></span></div>
+            </div>
+            <div className="tech">
+
+              <p>JavaScript</p>
+              <div className="progress"><span className="dark highest"></span></div>
+            </div>
+            <div className="tech">
+
+              <p>CSS</p>
+              <div className="progress"><span className="red highest"></span></div>
+            </div>
+            <div className="tech">
+
+              <p>HTML</p>
+              <div className="progress"><span className="blue highest"></span></div>
+            </div>
+            <div className="tech">
+
+              <p>React</p>
+              <div className="progress"><span className="yellow highest"></span></div>
+            </div>
+            <div className="tech">
+
+              <p>TypeScript</p>
+              <div className="progress"><span className="dark sub-highest"></span></div>
+            </div>
+            <div className="tech">
+
+              <p>Python</p>
+              <div className="progress"><span className="blue sub-medium"></span></div>
+            </div>
+            <div className="tech">
+              <p>React Native</p>
+              <div className="progress"><span className="dark sub-medium"></span></div>
+            </div>
+            <div className="tech">
+              <p>NodeJS</p>
+              <div className="progress"><span className="red highest"></span></div>
+            </div>
           </div>
         </div>
       </div>
-        </div>
-      
+
     </div>
 
   );

@@ -41,7 +41,7 @@ header>div>a {
 
 .tech {
   padding: 30px;
-  filter: saturate(0);
+
 }
 
 /* #root>div>div {
@@ -98,6 +98,104 @@ header>div>a {
   font-size: 14px;
 }
 
-.self{
+.self {
   display: flex;
+}
+
+h1 {
+  text-align: center;
+}
+
+.progress {
+  width: 15vw;
+  height: 1.5vh;
+  background-color: rgb(193, 193, 193);
+  border-radius: 15px;
+}
+
+.progress>span {
+  height: 1.5vh;
+  z-index: 100;
+  display: block;
+  border-radius: 15px;
+}
+
+@keyframes highest {
+  from {
+    width: 0px;
+  }
+
+  to {
+    width: 15vw;
+  }
+}
+
+@keyframes sub-highest {
+  from {
+    width: 0px;
+  }
+
+  to {
+    width: 12vw;
+  }
+}
+
+@keyframes sub-medium {
+  from {
+    width: 0px;
+  }
+
+  to {
+    width: 9vw;
+  }
+}
+
+.highest {
+  animation: highest 5s forwards;
+}
+
+.sub-highest {
+  animation: sub-highest 5s forwards;
+}
+
+.sub-medium {
+  animation: sub-medium 5s forwards;
+}
+
+.red {
+  background-color: #dc3545;
+}
+
+.dark {
+  background-color: #343a40;
+}
+
+.blue {
+  background-color: #17a2b8;
+}
+
+.yellow {
+  background-color: #ffc107;
+}
+
+.education>div {
+  display: flex;
+  align-items: center;
+}
+
+.education label {
+  color: #a5a3a3;
+}
+
+.education h3,
+.education h4,
+.education label {
+  margin: 10px;
+}
+
+.education {
+  width: 100vw;
+}
+header div{
+  font-size: 20px;
 }
