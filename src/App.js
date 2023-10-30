@@ -17,20 +17,33 @@ import HomePage from "./img/homepage.jpg"
 import Arrow from "./components/Arrow"
 import Uct from "./img/uct.png"
 import Typewriter from 'typewriter-effect/dist/core';
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
+import Hamburger from "./img/Hamburger"
+import X from "./img/X"
 
 
 function App() {
-  useEffect(()=>{
+  //const [isMenu, setMenu]=useState<Boolean>(false)
+  function toggleMenu(){
+    document.querySelector('.hamburger-btn').style.display="none"
+    document.querySelector('.x-btn').style.display="inline"
+    document.querySelector('.hamburger').style.display="flex"
+  }
+  function untoggleMenu(){
+    document.querySelector('.hamburger-btn').style.display="inline"
+    document.querySelector('.x-btn').style.display="none"
+    document.querySelector('.hamburger').style.display="none"
+  }
+  useEffect(() => {
     var app = document.getElementById('typer');
 
     var typewriter = new Typewriter(app, {
       loop: false,
-      delay: 75,cursor:" "
+      delay: 75, cursor: " "
     });
-    
+
     typewriter
-    .changeCursor(' ')
+      .changeCursor(' ')
       .typeString('I\'m Ntandoyenkosi')
       .pauseFor(300)
       .deleteChars(19)
@@ -39,12 +52,23 @@ function App() {
       .deleteChars(21)
       .typeString('Ntandoyenkosi')
       .start();
-  },[])
+  }, [])
   return (
     <div className="mouse-tracking">
       <header>
         <div>
           <span className="logo">{`<Ntandoyenkosi/>`}</span>
+        </div>
+        <div className="menu">
+          <span className="hamburger-btn" onClick={()=>toggleMenu()}><Hamburger  /></span>
+          <span className="x-btn" onClick={()=>untoggleMenu()}><X /></span>
+          <div className="hamburger">
+            <a href="/">Home</a>
+            <a href="/">About</a>
+            <a href="/">Tech Stack</a>
+            <a href="/">Projects</a>
+            <a href="/">Contact</a>
+          </div>
         </div>
         <div>
           <a href="/">Home</a>
@@ -53,6 +77,7 @@ function App() {
           <a href="/">Projects</a>
           <a href="/">Contact</a>
         </div>
+
       </header>
       <div className="landing-page">
         <div>
@@ -88,7 +113,7 @@ function App() {
               <a className="github" title="View source code" href="#" target="_blank"><GitHub /></a>
             </div>
             <div>
-              <img src={HomePage} height={300} />
+              <img src={HomePage} />
             </div>
           </div>
           <div className="project">
@@ -101,7 +126,7 @@ function App() {
               <a className="github" title="View source code" href="#" target="_blank"><GitHub /></a>
             </div>
             <div>
-              <img src={HomePage} height={300} />
+              <img src={HomePage} />
             </div>
           </div>
         </div>
@@ -186,9 +211,9 @@ function App() {
           </div>
           <div>
             <div>
-            <a className="linkedin" title="Let's connect on LinkedIn" href="https://www.linkedin.com/in/ntandoyenkosi-mendu/" target="_blank"><LinkedIn /></a>
-            <a className="email" title="Contact me via Email" href="mailto:ntandoyenkosi.mendu@gmail.com" target="_blank"><Email /></a>
-            <a className="github" title="Check out my work on GitHub" href="https://github.com/ntandoyenkosi1" target="_blank"><GitHub /></a>
+              <a className="linkedin" title="Let's connect on LinkedIn" href="https://www.linkedin.com/in/ntandoyenkosi-mendu/" target="_blank"><LinkedIn /></a>
+              <a className="email" title="Contact me via Email" href="mailto:ntandoyenkosi.mendu@gmail.com" target="_blank"><Email /></a>
+              <a className="github" title="Check out my work on GitHub" href="https://github.com/ntandoyenkosi1" target="_blank"><GitHub /></a>
             </div>
           </div>
         </footer>

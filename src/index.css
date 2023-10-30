@@ -23,7 +23,7 @@ header {
   height: 10vh;
 }
 
-header>div>a {
+header>div a {
   padding: 20px;
   text-decoration: none;
   color: black;
@@ -67,9 +67,9 @@ header>div>a {
 
 .landing-page {
   height: 90vh;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: space-evenly !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   background-color: #fafafa;
 }
 
@@ -81,15 +81,21 @@ header>div>a {
   text-decoration: none;
   color: black;
 }
-.linkedin:hover{
+
+.linkedin:hover {
   color: #0a66c2;
 }
-.github:hover{
-  color: #928bbb;;
+
+.github:hover {
+  color: #928bbb;
+  ;
 }
-.email:hover, .link:hover{
+
+.email:hover,
+.link:hover {
   color: #dc7676;
 }
+
 .landing-page img {
   background: linear-gradient(white, white) padding-box,
     linear-gradient(to right, #6ac95d, black, #eedd44) border-box;
@@ -117,6 +123,7 @@ header>div>a {
 
 .project img {
   box-shadow: 20px 20px 20px 0px #efefef;
+  width: 45vw;
 }
 
 .project label {
@@ -207,6 +214,7 @@ h1 {
 .education>div {
   display: flex;
   align-items: center;
+  padding-left: 10vw;
 }
 
 .education label {
@@ -222,7 +230,9 @@ h1 {
 .education {
   width: 100vw;
 }
-
+.menu{
+  display: none;
+}
 @keyframes glow {
   from {
     color: black;
@@ -234,34 +244,40 @@ h1 {
     -webkit-background-clip: text;
   }
 }
+
 @keyframes glow-hover {
   from {
     color: black;
   }
 
   to {
-    background: linear-gradient(to right, #6ac95d, #cf23cf, #eedd44,#f32170);
+    background: linear-gradient(to right, #6ac95d, #cf23cf, #eedd44, #f32170);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
   }
 }
-.logo{
+
+.logo {
   font-size: 20px;
   animation: glow 0s forwards;
 }
-.logo:hover{
+
+.logo:hover {
   font-size: 20px;
   animation: glow-hover 0s forwards;
 }
+
 #typer {
   width: 35vw;
   text-align: left;
   min-height: 44px;
   animation: glow infinite forwards;
 }
+
 #typer:hover {
   animation: glow-hover infinite forwards;
 }
+
 .Typewriter__cursor {
   padding: 0 !important;
   margin: 0 !important;
@@ -271,19 +287,129 @@ footer {
   display: flex;
   justify-content: space-evenly;
 }
-footer > div{
+
+footer>div {
   padding: 10px;
 }
-footer a{
+
+footer a {
   padding-left: 20px;
   color: black;
 }
 
-.education, .skills{
+.education,
+.skills {
   background-color: #fafafa;
 }
 
-.skills>h1{
+.skills>h1 {
   margin-top: 0px;
+  padding-top: 20px;
+}
+.hamburger{
+  display: none;
+}
+.x-btn, .hamburger{
+  display: none;
+}
+
+@media screen and (max-width:1195px) {
+  .work .project div {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width:764px) {
+  #root {
+    padding: 0px 20px 20px 20px;
+  }
+}
+
+@media screen and (max-width:764px) {
+  header>div>a {
+    padding: 0px 10px 10px 0px;
+  }
+
+  header {
+    justify-content: space-between;
+  }
+
+  footer {
+    justify-content: center;
+  }
+
+  .project {
+    flex-direction: column;
+    align-items: normal;
+  }
+
+  .project>div:last-child {
+    display: none;
+  }
+
+  h1 {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width:573px) {
+  header>div:last-child {
+    display: none;
+  }
+  .menu{
+    display: block;
+  }
+  .hamburger{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 10vh;
+    background-color: white;
+    right: 0;
+    width: 95vw;
+    height: 35vh;
+    box-shadow: 0px 8px 20px 0px grey;
+  }
+  .hamburger>a{
+    padding: 20px;
+    border-bottom: solid grey 3px;
+    width: 70vw;
+    text-align: center;
+  }
+
+  .landing-page {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: normal;
+  }
+
+  #typer {
+    width: 55vw;
+  }
+
+  .education>div {
+    padding-left: 0vw;
+  }
+
+  .tech-stack>div {
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tech {
+    padding: 0px;
+    width: 60vw;
+  }
+
+  .progress {
+    transform: scale(3);
+  }
+
+  footer {
     padding-top: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
 }
