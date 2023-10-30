@@ -16,12 +16,35 @@ import Email from "./components/Email"
 import HomePage from "./img/homepage.jpg"
 import Arrow from "./components/Arrow"
 import Uct from "./img/uct.png"
+import Typewriter from 'typewriter-effect/dist/core';
+import { useEffect } from "react"
+
+
 function App() {
+  useEffect(()=>{
+    var app = document.getElementById('typer');
+
+    var typewriter = new Typewriter(app, {
+      loop: false,
+      delay: 75,cursor:" "
+    });
+    
+    typewriter
+    .changeCursor(' ')
+      .typeString('I\'m Ntandoyenkosi')
+      .pauseFor(300)
+      .deleteChars(19)
+      .typeString('I\'m a software developer.')
+      .pauseFor(1000)
+      .deleteChars(21)
+      .typeString('Ntandoyenkosi')
+      .start();
+  },[])
   return (
     <div>
       <header>
         <div>
-          {`<Ntandoyenkosi/>`}
+          <span>{`<Ntandoyenkosi/>`}</span>
         </div>
         <div>
           <a href="/">Home</a>
@@ -35,9 +58,10 @@ function App() {
         <div>
           <img src={Ntando} alt="" width={300} />
           <h3>Hi There</h3>
-          <h1>I'm Ntandoyenkosi Mendu</h1>
+          <h1 id="typer">I'm Ntandoyenkosi Mendu</h1>
           {/* {I am a software developer} */}
           <h2>I create for the digital world.</h2>
+          {/* <div id="typer"></div> */}
         </div>
         <div>
           I am a Software Developer.
@@ -155,7 +179,11 @@ function App() {
           </div>
         </div>
       </div>
-
+      <div className="footer">
+        <footer>
+          
+        </footer>
+      </div>
     </div>
 
   );
