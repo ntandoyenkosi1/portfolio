@@ -41,10 +41,10 @@ function App() {
       .start();
   },[])
   return (
-    <div>
+    <div className="mouse-tracking">
       <header>
         <div>
-          <span>{`<Ntandoyenkosi/>`}</span>
+          <span className="logo">{`<Ntandoyenkosi/>`}</span>
         </div>
         <div>
           <a href="/">Home</a>
@@ -68,9 +68,9 @@ function App() {
           <br />
           Studied Information Systems at University of Cape Town.
           <div>
-            <a title="Let's connect on LinkedIn" href="https://www.linkedin.com/in/ntandoyenkosi-mendu/" target="_blank"><LinkedIn /></a>
-            <a title="Contact me via Email" href="mailto:ntandoyenkosi.mendu@gmail.com" target="_blank"><Email /></a>
-            <a title="Check out my work on GitHub" href="https://github.com/ntandoyenkosi1" target="_blank"><GitHub /></a>
+            <a className="linkedin" title="Let's connect on LinkedIn" href="https://www.linkedin.com/in/ntandoyenkosi-mendu/" target="_blank"><LinkedIn /></a>
+            <a className="email" title="Contact me via Email" href="mailto:ntandoyenkosi.mendu@gmail.com" target="_blank"><Email /></a>
+            <a className="github" title="Check out my work on GitHub" href="https://github.com/ntandoyenkosi1" target="_blank"><GitHub /></a>
           </div>
         </div>
 
@@ -84,8 +84,8 @@ function App() {
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br />eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 <br />Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
               <label>Node.JS, Handlebars, Express, MySQL</label><br />
-              <a title="Open in new tab" href="#" target="_blank"><Arrow /></a>
-              <a title="View source code" href="#" target="_blank"><GitHub /></a>
+              <a className="link" title="Open in new tab" href="#" target="_blank"><Arrow /></a>
+              <a className="github" title="View source code" href="#" target="_blank"><GitHub /></a>
             </div>
             <div>
               <img src={HomePage} height={300} />
@@ -97,8 +97,8 @@ function App() {
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br />eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 <br />Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
               <label>Node.JS, Handlebars, Express, MySQL</label><br />
-              <a title="Open in new tab" href="#" target="_blank"><Arrow /></a>
-              <a title="View source code" href="#" target="_blank"><GitHub /></a>
+              <a className="link" title="Open in new tab" href="#" target="_blank"><Arrow /></a>
+              <a className="github" title="View source code" href="#" target="_blank"><GitHub /></a>
             </div>
             <div>
               <img src={HomePage} height={300} />
@@ -181,7 +181,16 @@ function App() {
       </div>
       <div className="footer">
         <footer>
-          
+          <div className="logo">
+            {`<Ntandoyenkosi/>`}
+          </div>
+          <div>
+            <div>
+            <a className="linkedin" title="Let's connect on LinkedIn" href="https://www.linkedin.com/in/ntandoyenkosi-mendu/" target="_blank"><LinkedIn /></a>
+            <a className="email" title="Contact me via Email" href="mailto:ntandoyenkosi.mendu@gmail.com" target="_blank"><Email /></a>
+            <a className="github" title="Check out my work on GitHub" href="https://github.com/ntandoyenkosi1" target="_blank"><GitHub /></a>
+            </div>
+          </div>
         </footer>
       </div>
     </div>

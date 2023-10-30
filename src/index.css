@@ -42,7 +42,6 @@ header>div>a {
 
 .tech {
   padding: 30px;
-
 }
 
 /* #root>div>div {
@@ -50,9 +49,9 @@ header>div>a {
   flex-direction: column;
   align-items: center;
 } */
-.work {
+/* .work {
   border-bottom: rgb(0, 0, 0) 2px solid
-}
+} */
 
 .work>div {
   display: flex;
@@ -82,19 +81,37 @@ header>div>a {
   text-decoration: none;
   color: black;
 }
-.landing-page img{
+.linkedin:hover{
+  color: #0a66c2;
+}
+.github:hover{
+  color: #928bbb;;
+}
+.email:hover, .link:hover{
+  color: #dc7676;
+}
+.landing-page img {
   background: linear-gradient(white, white) padding-box,
-              linear-gradient(to right,  #6ac95d, black, #eedd44) border-box;
+    linear-gradient(to right, #6ac95d, black, #eedd44) border-box;
   border-radius: 50em;
   border: 4px solid transparent;
 }
+
+.landing-page img:hover {
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to right, black, #eedd44, #6ac95d) border-box;
+  border-radius: 50em;
+  border: 4px solid transparent;
+}
+
 .project {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding-top: 30px;
+  padding-bottom: 51px;
 }
-.project div:first-child{
+
+.project div:first-child {
   box-shadow: 17px 20px 20px 0px #efefef;
 }
 
@@ -205,28 +222,68 @@ h1 {
 .education {
   width: 100vw;
 }
-@keyframes glow{
-  from{color: black;}
-  to{
-    background: linear-gradient(to right, #f32170, #6ac95d, #cf23cf, #eedd44); 
-  -webkit-text-fill-color: transparent; 
-  -webkit-background-clip: text;
+
+@keyframes glow {
+  from {
+    color: black;
+  }
+
+  to {
+    background: linear-gradient(to right, #f32170, #6ac95d, #cf23cf, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
   }
 }
+@keyframes glow-hover {
+  from {
+    color: black;
+  }
 
-
- header> div>span{
+  to {
+    background: linear-gradient(to right, #6ac95d, #cf23cf, #eedd44,#f32170);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+}
+.logo{
   font-size: 20px;
   animation: glow 0s forwards;
 }
-
-#typer{
+.logo:hover{
+  font-size: 20px;
+  animation: glow-hover 0s forwards;
+}
+#typer {
   width: 35vw;
   text-align: left;
   min-height: 44px;
   animation: glow infinite forwards;
 }
-.Typewriter__cursor{
+#typer:hover {
+  animation: glow-hover infinite forwards;
+}
+.Typewriter__cursor {
   padding: 0 !important;
   margin: 0 !important;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+footer > div{
+  padding: 10px;
+}
+footer a{
+  padding-left: 20px;
+  color: black;
+}
+
+.education, .skills{
+  background-color: #fafafa;
+}
+
+.skills>h1{
+  margin-top: 0px;
+    padding-top: 20px;
 }
