@@ -140,7 +140,7 @@ h1 {
 }
 
 .progress {
-  width: 15vw;
+  width: 25vw;
   height: 1.5vh;
   background-color: rgb(193, 193, 193);
   border-radius: 15px;
@@ -159,7 +159,7 @@ h1 {
   }
 
   to {
-    width: 15vw;
+    width: 25vw;
   }
 }
 
@@ -169,7 +169,7 @@ h1 {
   }
 
   to {
-    width: 12vw;
+    width: 15vw;
   }
 }
 
@@ -402,6 +402,9 @@ footer a {
     padding: 0px;
     /* width: 60vw; */
   }
+  .tech > p{
+    width: 30vw;
+  }
 
   .progress {
     transform: scale(3);
@@ -416,6 +419,6 @@ footer a {
 
 @media screen and (max-width:345px) {
   .landing-page img {
-    width: 100%;
+    width: 95%;
   }
 }

@@ -1,15 +1,4 @@
 import Ntando from "./img/ntandoyenkosi.jpg"
-import CSharp from "./img/CSharp"
-import Css from "./img/Css"
-import Html from "./img/Html"
-import Javascript from "./img/Js"
-import NodeJs from "./img/Node"
-import Python from "./img/Python"
-import ReactNative from "./img/ReactNative"
-import ReactComponent from "./img/React"
-import TypeScript from "./img/TypeScript"
-import Star from "./components/Star"
-import StarFilled from "./components/StarFilled"
 import GitHub from "./components/GitHub"
 import LinkedIn from "./components/LinkedIn"
 import Email from "./components/Email"
@@ -21,9 +10,7 @@ import { useEffect, useState } from "react"
 import Hamburger from "./img/Hamburger"
 import X from "./img/X"
 
-
 function App() {
-  //const [isMenu, setMenu]=useState<Boolean>(false)
   function toggleMenu(){
     document.querySelector('.hamburger-btn').style.display="none"
     document.querySelector('.x-btn').style.display="inline"
@@ -63,44 +50,42 @@ function App() {
           <span className="hamburger-btn" onClick={()=>toggleMenu()}><Hamburger  /></span>
           <span className="x-btn" onClick={()=>untoggleMenu()}><X /></span>
           <div className="hamburger">
-            <a href="/">Home</a>
-            <a href="/">About</a>
-            <a href="/">Tech Stack</a>
-            <a href="/">Projects</a>
-            <a href="/">Contact</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
           </div>
         </div>
         <div>
-          <a href="/">Home</a>
-          <a href="/">About</a>
-          <a href="/">Tech Stack</a>
-          <a href="/">Projects</a>
-          <a href="/">Contact</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
         </div>
 
       </header>
-      <div className="landing-page">
+      <div id="about" className="landing-page">
         <div>
-          <img src={Ntando} alt="" width={300} />
+          <img src={Ntando} alt="Ntandoyenkosi animated" width={300} />
           <h3>Hi There</h3>
           <h1 id="typer">I'm Ntandoyenkosi Mendu</h1>
-          {/* {I am a software developer} */}
           <h2>I create for the digital world.</h2>
-          {/* <div id="typer"></div> */}
         </div>
         <div>
           I am a Software Developer.
           <br />
           Studied Information Systems at University of Cape Town.
           <div>
-            <a className="linkedin" title="Let's connect on LinkedIn" href="https://www.linkedin.com/in/ntandoyenkosi-mendu/" target="_blank"><LinkedIn /></a>
-            <a className="email" title="Contact me via Email" href="mailto:ntandoyenkosi.mendu@gmail.com" target="_blank"><Email /></a>
-            <a className="github" title="Check out my work on GitHub" href="https://github.com/ntandoyenkosi1" target="_blank"><GitHub /></a>
+            <a className="linkedin" title="Let's connect on LinkedIn" href="https://www.linkedin.com/in/ntandoyenkosi-mendu/" rel="noreferrer" target="_blank"><LinkedIn /></a>
+            <a className="email" title="Contact me via Email" href="mailto:ntandoyenkosi.mendu@gmail.com" rel="noreferrer" target="_blank"><Email /></a>
+            <a className="github" title="Check out my work on GitHub" href="https://github.com/ntandoyenkosi1" rel="noreferrer" target="_blank"><GitHub /></a>
           </div>
         </div>
 
       </div>
-      <div className="work">
+      <div id="projects" className="work">
         <h1>My Work</h1>
         <div>
           <div className="project">
@@ -109,11 +94,11 @@ function App() {
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br />eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 <br />Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
               <label>Node.JS, Handlebars, Express, MySQL</label><br />
-              <a className="link" title="Open in new tab" href="#" target="_blank"><Arrow /></a>
-              <a className="github" title="View source code" href="#" target="_blank"><GitHub /></a>
+              <a className="link" title="Open in new tab" rel="noreferrer" href="#" target="_blank"><Arrow /></a>
+              <a className="github" title="View source code" href="#" rel="noreferrer" target="_blank"><GitHub /></a>
             </div>
             <div>
-              <img src={HomePage} />
+              <img alt="first project" src={HomePage} />
             </div>
           </div>
           <div className="project">
@@ -122,20 +107,20 @@ function App() {
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br />eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 <br />Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
               <label>Node.JS, Handlebars, Express, MySQL</label><br />
-              <a className="link" title="Open in new tab" href="#" target="_blank"><Arrow /></a>
-              <a className="github" title="View source code" href="#" target="_blank"><GitHub /></a>
+              <a className="link" title="Open in new tab" href="#" rel="noreferrer" target="_blank"><Arrow /></a>
+              <a className="github" title="View source code" href="#" rel="noreferrer" target="_blank"><GitHub /></a>
             </div>
             <div>
-              <img src={HomePage} />
+              <img alt="second project" src={HomePage} />
             </div>
           </div>
         </div>
       </div>
       <div className="self">
-        <div className="education">
+        <div id="education" className="education">
           <h1>Education</h1>
           <div>
-            <div><img src={Uct} width={100} /></div>
+            <div><img alt="uct logo" src={Uct} width={100} /></div>
 
             <div>
               <h3>University of Cape Town</h3>
@@ -144,7 +129,7 @@ function App() {
             </div>
           </div>
           <div>
-            <div><img src={Uct} width={100} /></div>
+            <div><img alt="uct logo" src={Uct} width={100} /></div>
             <div>
               <h3>University of Cape Town</h3>
               <h4>Bachelor of Commerce specializing in Information Systems</h4>
@@ -154,7 +139,7 @@ function App() {
         </div>
 
       </div>
-      <div className="skills">
+      <div id="skills" className="skills">
         <h1>Skills</h1>
         <div className="tech-stack">
           <div>
@@ -204,16 +189,16 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="footer">
+      <div id="contact" className="footer">
         <footer>
           <div className="logo">
             {`<Ntandoyenkosi/>`}
           </div>
           <div>
             <div>
-              <a className="linkedin" title="Let's connect on LinkedIn" href="https://www.linkedin.com/in/ntandoyenkosi-mendu/" target="_blank"><LinkedIn /></a>
-              <a className="email" title="Contact me via Email" href="mailto:ntandoyenkosi.mendu@gmail.com" target="_blank"><Email /></a>
-              <a className="github" title="Check out my work on GitHub" href="https://github.com/ntandoyenkosi1" target="_blank"><GitHub /></a>
+              <a className="linkedin" title="Let's connect on LinkedIn" href="https://www.linkedin.com/in/ntandoyenkosi-mendu/" rel="noreferrer" target="_blank"><LinkedIn /></a>
+              <a className="email" title="Contact me via Email" href="mailto:ntandoyenkosi.mendu@gmail.com" rel="noreferrer" target="_blank"><Email /></a>
+              <a className="github" title="Check out my work on GitHub" href="https://github.com/ntandoyenkosi1" rel="noreferrer" target="_blank"><GitHub /></a>
             </div>
           </div>
         </footer>
