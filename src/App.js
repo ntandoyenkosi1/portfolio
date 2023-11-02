@@ -1,14 +1,14 @@
-import Ntando from "./img/ntandoyenkosi.jpg"
-import GitHub from "./components/GitHub"
-import LinkedIn from "./components/LinkedIn"
-import Email from "./components/Email"
+import { useEffect } from "react"
+import Typewriter from 'typewriter-effect/dist/core'
+import Arrow from "./img/icons/Arrow"
+import Email from "./img/icons/Email"
+import GitHub from "./img/icons/GitHub"
+import LinkedIn from "./img/icons/LinkedIn"
+import Hamburger from "./img/icons/Hamburger"
+import X from "./img/icons/X"
 import HomePage from "./img/homepage.jpg"
-import Arrow from "./components/Arrow"
+import Ntando from "./img/ntandoyenkosi.jpg"
 import Uct from "./img/uct.png"
-import Typewriter from 'typewriter-effect/dist/core';
-import { useEffect, useState } from "react"
-import Hamburger from "./img/Hamburger"
-import X from "./img/X"
 
 function App() {
   function toggleMenu(){
