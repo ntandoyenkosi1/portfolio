@@ -8,17 +8,17 @@ function Work() {
             title: "Big Small Blog",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do \neiusmod tempor incididunt ut labore et dolore magna aliqua.\nUt enim ad minim veniam, quis nostrud exercitation ullamco",
             tech: "Node.JS, Handlebars, Express, MySQL",
-            link: "#",
+            link: "https://big-small-blog-cck37mrz7a-ue.a.run.app/",
             image: HomePage,
-            github: "#"
+            github: "https://github.com/ntandoyenkosi1/big-small-blog"
         },
         {
             title: "Big Small Blog",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do \neiusmod tempor incididunt ut labore et dolore magna aliqua.\nUt enim ad minim veniam, quis nostrud exercitation ullamco",
             tech: "Node.JS, Handlebars, Express, MySQL",
-            link: "#",
+            link: "https://postman-to-markdown-cck37mrz7a-ue.a.run.app/",
             image: HomePage,
-            github: "#"
+            github: "https://github.com/ntandoyenkosi1/postman-to-markdown"
         }
     ])
     return (<>
