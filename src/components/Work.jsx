@@ -1,4 +1,5 @@
 import HomePage from "../img/homepage.jpg"
+import PostMan from "../img/postman-to-markdown.png"
 import GitHub from "../img/icons/GitHub"
 import Arrow from "../img/icons/Arrow"
 import { useState } from "react";
@@ -6,18 +7,18 @@ function Work() {
     const [projects] = useState([
         {
             title: "Big Small Blog",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do \neiusmod tempor incididunt ut labore et dolore magna aliqua.\nUt enim ad minim veniam, quis nostrud exercitation ullamco",
+            description: "This is a blogging platform. It provides users with the ability to create posts, view posts, and comment on other people's posts, making it an engaging platform for tech enthusiasts and bloggers.",
             tech: "Node.JS, Handlebars, Express, MySQL",
             link: "https://big-small-blog-cck37mrz7a-ue.a.run.app/",
             image: HomePage,
             github: "https://github.com/ntandoyenkosi1/big-small-blog"
         },
         {
-            title: "Big Small Blog",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do \neiusmod tempor incididunt ut labore et dolore magna aliqua.\nUt enim ad minim veniam, quis nostrud exercitation ullamco",
-            tech: "Node.JS, Handlebars, Express, MySQL",
+            title: "Postman to Markdown",
+            description: "This project allows you to convert a Postman JSON file to markdown format. This makes it easier to visualize your HTTP endpoints for ease-of-use and understanding.",
+            tech: "Node.JS",
             link: "https://postman-to-markdown-cck37mrz7a-ue.a.run.app/",
-            image: HomePage,
+            image: PostMan,
             github: "https://github.com/ntandoyenkosi1/postman-to-markdown"
         }
     ])
@@ -26,7 +27,7 @@ function Work() {
             <h1>My Work</h1>
             <div>
                 {projects.map((x, index) =>
-                    <div className="project">
+                    <div key={index} className="project">
                         <div>
                             <h3>{x.title}</h3>
                             <p>{x.description}</p>
